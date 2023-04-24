@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------first-section-------- */
+
+.first-section{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(150, 113, 94, 0.7), rgba(10, 49, 36, 0.7)), url(img/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: -32px;
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    
+}
+.header img{
+    width: 100%;
+}
+.nav-links{
+    flex-basis: 85%;
+    text-align: right;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.text-box p{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.text-box a{
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px;
+    margin-top: 25px;
+    transition: 0.5s ease;
+
+}
+.text-box a:hover{
+    background: rgb(234, 118, 118);
+    
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(238, 126, 126);
+    display: block;
+    margin: auto;
+    transition: 0.7s ease;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.fa-bars{
+    
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    visibility: hidden;
+    z-index: 3;
+}
+
+/* ----------first-section-------- */
+
+@media only screen and (max-width:700px){
+
+.nav-links ul li{
+    display: block;
+}
+
+.nav-links{
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    width: 230px;
+    top: 0;
+    right: -250px;
+    background-color: cadetblue;
+    text-align: left;
+    transition: 0.5s ease;
+}
+.fa-bars{
+    visibility: visible;
+}
+
+
+
+}
+
+
+/* -------aboutUs------- */
+
+.about-us{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.about-us h1{
+    font-size: 40px;
+}
+
+.row{
+    
+    display: flex;
+    width: 80%;
+    margin: 25px auto;
+    justify-content: space-between;
+    
+}
+
+.aboutUs-column{
+    flex-basis: 32%;
+    position: relative;
+}
+.aboutUs-column img{
+    width: 100%;
+}
+
+.layer{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+
+
+
+
+@media only screen and (max-width:700px){
+
+.row{
+    flex-direction: column;
+}
+}
+
+
+/* ------services-------- */
+.services{
+    margin-top: 5%;
+    text-align: center;
+}
+.services h1{
+    font-size: 40px;
+}
+.services-col{
+    flex-basis: 32%;
+}
+
+.services-col img{
+    width: 100%;
+}
+
+.services-col h3{
+    text-align: left;
+}
+
+/* Footer  */
+.footer{
+    background-color:#005555;
+    color: white;
+    margin:0 auto 0 auto;
+    padding:10px;
+    text-align: center;
+}

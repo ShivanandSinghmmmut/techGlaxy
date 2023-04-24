@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <section class="first-section">
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo3.png" alt="">
+            </div>
+            <i class="fa fa-bars" id="menuBar"></i>
+            <div class="nav-links" id="navLinks">
+                
+                <ul>
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="Home">Projects</a></li>
+                    <li><a href="about">Clients</a></li>
+                    <li><a href="Home">Services</a></li>
+                    <li><a href="about">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-box">
+            <h1>our company</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est laborum tempore maxime 
+                minima eius quasi recusandae quis consectetur eaque a aspernatur provident autem 
+                blanditiis, delectus veniam facilis.</p>
+            <a href="#" class="visit-us-button">visit us to know more</a>
+        </div>
+    </section>
+
+<!-- ---------About Us----------- -->
+
+<section class="about-us">
+    <h1>Our Global Branches</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="aboutUs-column">
+            <img src="img/branch1.jpg" alt="">
+            <div class="layer"></div>
+            <h2>London</h2>
+        </div>
+        <div class="aboutUs-column">
+            <img src="img/branch2.jpg" alt="">
+            <div class="layer"></div>
+            <h2>China</h2>
+        </div>
+        <div class="aboutUs-column">
+            <img src="img/branch3.jpg" alt="">
+            <div class="layer"></div>
+            <h2>America</h2>
+        </div>
+    </div>
+</section>
+
+<!-- --------services---------- -->
+
+<section class="services">
+    <h1>Our Services</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="services-col">
+            <img src="img/service1.jpg" alt="">
+            <h3>work from home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="services-col">
+            <img src="img/service2.jpg" alt="">
+            <h3>work from home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="services-col">
+            <img src="img/service3.jpg" alt="">
+            <h3>work from home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer  -->
+<div class="footer">
+    <p>Made with ❤ by<span> Shiva Nand Singh</span></p>
+</div>
+
+<script>
+    var menuBar = document.getElementById('menuBar');
+    var navlinks = document.getElementById('navLinks');
+
+    menuBar.onclick = function(){
+        if(navlinks.style.right== '-250px'){
+            navlinks.style.right = '0';
+        }else{
+            navlinks.style.right = '-250px';
+        }
+
+    }
+
+
+</script>
+
+</body>
+
+</html>
