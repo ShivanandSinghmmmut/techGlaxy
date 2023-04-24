@@ -61,7 +61,7 @@
     
 }
 
-.text-box a{
+.text-box button{
     text-decoration: none;
     background: transparent;
     border: 2px solid #fff;
@@ -71,7 +71,7 @@
     transition: 0.5s ease;
 
 }
-.text-box a:hover{
+.text-box button:hover{
     background: rgb(234, 118, 118);
     
 }
